@@ -52,7 +52,8 @@ public class ProductServiceImpl implements ProductService {
                 .orElseThrow(() ->
                         new NotFoundException("Product doesn't exist with the given id: " + productId));
 
-        product.setProductName(updatedProductDto.getProductName());
+        product.setName(updatedProductDto.getProductName());
+        product.setDescription(updatedProductDto.getDescription());
         product.setQuantity(updatedProductDto.getQuantity());
         product.setPrice(updatedProductDto.getPrice());
 

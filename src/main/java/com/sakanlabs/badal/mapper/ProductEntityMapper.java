@@ -8,6 +8,7 @@ public class ProductEntityMapper {
     public static Product mapToProduct(ProductDto productDto) {
         return new Product(
                 productDto.getProductName(),
+                productDto.getDescription(),
                 productDto.getQuantity(),
                 productDto.getPrice()
         );
@@ -15,8 +16,9 @@ public class ProductEntityMapper {
 
     public static ProductDto mapToProductDto(Product product) {
         return new ProductDto(
-                product.getId(),
-                product.getProductName(),
+                product.getId().toString(),
+                product.getName(),
+                product.getDescription(),
                 product.getQuantity(),
                 product.getPrice()
         );

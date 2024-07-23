@@ -15,7 +15,10 @@ import java.math.BigDecimal;
 public class Product extends AbstractBaseEntity {
 
     @Column
-    private String productName;
+    private String name;
+
+    @Column
+    private String description;
 
     @Column
     private int quantity;

@@ -35,7 +35,7 @@ public class CartMapper {
         cartDto.setId(cart.getId().toString());
         cartDto.setUserId(cart.getUser().getId().toString());
         cartDto.setProductId(cart.getProduct().getId().toString());
-        cartDto.setProductName(cart.getProduct().getProductName());
+        cartDto.setProductName(cart.getProduct().getName());
         cartDto.setQuantity(cart.getQuantity());
         cartDto.setTotalProductPrice(cart.getTotalProductPrice());
         return cartDto;

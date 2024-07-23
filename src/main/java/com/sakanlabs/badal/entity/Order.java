@@ -27,6 +27,10 @@ public class Order extends AbstractBaseEntity {
     @NotFound(action = NotFoundAction.IGNORE)
     private Product product;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @NotFound(action = NotFoundAction.IGNORE)
+    private OrderPayment orderPayment;
+
     @Column
     private int totalQuantity;
 
@@ -35,11 +39,5 @@ public class Order extends AbstractBaseEntity {
 
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
-
-    @Enumerated(EnumType.STRING)
-    private OrderPaymentStatus paymentStatus;
-
-    @Enumerated(EnumType.STRING)
-    private OrderPaymentType paymentType;
 
 }
