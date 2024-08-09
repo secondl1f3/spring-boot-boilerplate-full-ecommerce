@@ -1,4 +1,11 @@
-# Java Spring Boot Boilerplate (Spring Boot 3.1)
+# Java Spring Boot Boilerplate for E-Commerce Services (Spring Boot 3.1)
+
+I still maintain this project by adding more features.
+
+Upcoming features:
+1. Integration with Payment Gateway
+2. Integration with Logistic/Shipment Company
+3. Etc..
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
